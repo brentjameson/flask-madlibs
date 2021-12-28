@@ -20,9 +20,9 @@ def make_madlib():
     return render_template ('madlibs.html', place = place, noun = noun, verb = verb, adjective = adjective, name = name)
 
 
-def create_new_story(place, noun, verb, adjective, plural_noun):
+def create_new_story(place, noun, verb, adjective, name):
     story3 = Story([
-    place, noun, verb, adjective,plural_noun
+    place, noun, verb, adjective,name
     ],
     '''{name} {verb} the {noun} so hard that it broke into pieces. So they went back to {place} and ate {adjective} snakes'''
     )
